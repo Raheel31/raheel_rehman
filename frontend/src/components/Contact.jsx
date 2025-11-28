@@ -75,27 +75,9 @@ const Contact = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg text-gray-600 leading-relaxed mb-12"
             >
-              Interested in collaboration, have a project in mind, or just want to chat about AI? 
+              Interested in collaboration, have a project in mind, or just want to chat? 
               I'd love to hear from you.
             </motion.p>
-
-            {/* Email Button */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="mb-12"
-            >
-              <Button
-                size="lg"
-                className="bg-black text-white hover:bg-gray-800 transition-all duration-300 px-8 py-6 text-base"
-                onClick={() => window.location.href = `mailto:${personalInfo.email}`}
-              >
-                <Mail className="w-5 h-5 mr-2" />
-                {personalInfo.email}
-              </Button>
-            </motion.div>
 
             {/* Social Links */}
             <motion.div
@@ -141,86 +123,6 @@ const Contact = () => {
             </motion.div>
           </div>
 
-          {/* Right Side - Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          >
-            <form onSubmit={handleSubmit} className="bg-white border border-gray-100 rounded-3xl p-8 lg:p-10 shadow-sm">
-              <div className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    Name
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Your name"
-                    required
-                    className="w-full border-gray-200 focus:border-black focus:ring-black rounded-xl py-3"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email
-                  </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="your@email.com"
-                    required
-                    className="w-full border-gray-200 focus:border-black focus:ring-black rounded-xl py-3"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Message
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Tell me about your project or idea..."
-                    required
-                    rows={5}
-                    className="w-full border-gray-200 focus:border-black focus:ring-black rounded-xl resize-none"
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-black text-white hover:bg-gray-800 transition-all duration-300 py-6 text-base rounded-xl"
-                >
-                  {isSubmitting ? (
-                    <span className="flex items-center justify-center">
-                      <motion.div
-                        animate={{ rotate: 360 }}
-                        transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
-                        className="w-5 h-5 border-2 border-white border-t-transparent rounded-full mr-2"
-                      />
-                      Sending...
-                    </span>
-                  ) : (
-                    <span className="flex items-center justify-center">
-                      <Send className="w-5 h-5 mr-2" />
-                      Send Message
-                    </span>
-                  )}
-                </Button>
-              </div>
-            </form>
-          </motion.div>
         </div>
       </div>
     </section>

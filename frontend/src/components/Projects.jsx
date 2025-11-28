@@ -126,7 +126,7 @@ const Projects = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-gray-500 mt-6 max-w-2xl text-lg"
           >
-            A collection of AI and ML projects showcasing expertise in LLMs, deep learning, and data engineering.
+            An overview of applied AI and ML projects spanning LLMs, deep learning, and data science workflows.
           </motion.p>
         </div>
 

@@ -20,18 +20,15 @@ const About = () => {
               <div className="absolute inset-4 bg-gray-100 rounded-3xl -rotate-6" />
               <div className="absolute inset-4 bg-gray-50 rounded-3xl rotate-3" />
               
-              {/* Profile Image Placeholder */}
-              <div className="relative z-10 aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gray-300 flex items-center justify-center">
-                    <span className="text-5xl font-extralight text-gray-500">
-                      {personalInfo.name.charAt(0)}
-                    </span>
-                  </div>
-                  <p className="text-sm text-gray-500">Profile Image</p>
-                  <p className="text-xs text-gray-400 mt-1">/assets/profile.png</p>
-                </div>
-              </div>
+            {/* Profile Image */}
+            <div className="relative z-10 aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+              <img
+                src={personalInfo.profileImage}
+                alt="Profile"
+                className="w-56 h-56 rounded-full object-cover shadow-md"
+              />
+            </div>
+
 
               {/* Decorative Elements */}
               <motion.div
@@ -71,8 +68,8 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl lg:text-5xl font-extralight text-black tracking-tight mb-8"
             >
-              Crafting Intelligence,{' '}
-              <span className="font-medium">One Model at a Time</span>
+              Building with Data and Intelligence,{' '}
+              <span className="font-medium">One System at a Time</span>
             </motion.h2>
 
             <motion.p
@@ -99,11 +96,11 @@ const About = () => {
               </div>
               <div>
                 <p className="text-3xl lg:text-4xl font-extralight text-black">5+</p>
-                <p className="text-sm text-gray-500 mt-1">AI Projects</p>
+                <p className="text-sm text-gray-500 mt-1">Projects</p>
               </div>
               <div>
-                <p className="text-3xl lg:text-4xl font-extralight text-black">40%</p>
-                <p className="text-sm text-gray-500 mt-1">Efficiency Gain</p>
+                <p className="text-3xl lg:text-4xl font-extralight text-black">29</p>
+                <p className="text-sm text-gray-500 mt-1">Certifications</p>
               </div>
             </motion.div>
           </motion.div>

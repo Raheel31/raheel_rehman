@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import { navItems, personalInfo } from '../data/mock';
+import { navItems } from '../data/mock';
 import { Button } from './ui/button';
 
 const Header = () => {
@@ -38,20 +38,7 @@ const Header = () => {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between h-20">
-            {/* Logo */}
-            <motion.a
-              href="#home"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection('#home');
-              }}
-              className="text-xl font-light tracking-tight text-black"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.2 }}
-            >
-              {personalInfo.name.split(' ')[0]}
-              <span className="font-medium">.</span>
-            </motion.a>
+            <div className="w-24" /> {/* adjust width if needed */}
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">

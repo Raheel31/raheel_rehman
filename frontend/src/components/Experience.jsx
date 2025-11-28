@@ -99,7 +99,7 @@ const Experience = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-gray-500 mt-6 max-w-2xl mx-auto text-lg"
           >
-            Building AI solutions at scale in enterprise environments.
+            Building scalable, data-driven solutions across large, high-impact business environments.
           </motion.p>
         </div>
 

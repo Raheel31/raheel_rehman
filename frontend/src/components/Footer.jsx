@@ -27,7 +27,7 @@ const Footer = () => {
               transition={{ duration: 0.2 }}
             >
               {personalInfo.name.split(' ')[0]}
-              <span className="font-medium">.</span>
+              <span className="font-medium"></span>
             </motion.a>
             <p className="text-gray-400 text-sm leading-relaxed">
               {personalInfo.title}
@@ -49,44 +49,13 @@ const Footer = () => {
               ))}
             </nav>
           </div>
-
-          {/* Social */}
-          <div>
-            <h4 className="text-sm font-medium mb-4 text-gray-300">Connect</h4>
-            <div className="flex gap-4">
-              <a
-                href={personalInfo.socialLinks.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300"
-              >
-                <Github className="w-4 h-4" />
-              </a>
-              <a
-                href={personalInfo.socialLinks.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a
-                href={`mailto:${personalInfo.email}`}
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300"
-              >
-                <Mail className="w-4 h-4" />
-              </a>
-            </div>
-          </div>
         </div>
 
         {/* Divider */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-gray-500 flex items-center">
-              © {currentYear} {personalInfo.name}. Built with
-              <Heart className="w-3 h-3 mx-1 text-red-500" fill="currentColor" />
-              and AI
+              © {currentYear} {personalInfo.name}
             </p>
 
             {/* Back to Top */}

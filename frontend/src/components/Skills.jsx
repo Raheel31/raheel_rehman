@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Brain, Database, Wrench, Layers } from 'lucide-react';
+import { Code, Brain, BarChart, Database, Wrench, Layers } from 'lucide-react';
 import { skills } from '../data/mock';
 import { Badge } from './ui/badge';
 
@@ -63,6 +63,11 @@ const Skills = () => {
     {
       title: 'Data Science',
       items: skills.dataScience,
+      icon: BarChart,
+    },
+    {
+      title: 'Data Engineering',
+      items: skills.dataEngineering,
       icon: Database,
     },
     {
