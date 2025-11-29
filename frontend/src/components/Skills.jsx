@@ -61,8 +61,8 @@ const Skills = () => {
       icon: Brain,
     },
     {
-      title: 'Data Science',
-      items: skills.dataScience,
+      title: 'Data Analysis',
+      items: skills.dataAnalysisVisualization,
       icon: BarChart,
     },
     {
@@ -71,8 +71,8 @@ const Skills = () => {
       icon: Database,
     },
     {
-      title: 'Tools & Technologies',
-      items: skills.toolsTechnologies,
+      title: 'Cloud & DevOps ',
+      items: skills.cloudDevOpsTools,
       icon: Wrench,
     },
     {

@@ -65,12 +65,30 @@ export const projects = [
 
 export const skills = {
   languages: ["Python", "R", "C", "JavaScript", "HTML", "CSS"],
-  machineLearning: ["PyTorch", "TensorFlow", "Keras", "Scikit-Learn","OpenCV" ,"HuggingFace", "Transformers", "LangChain", "LangGraph","Optuna", "Faiss"],
-  dataScience: ["NumPy", "Pandas", "Matplotlib", "Seaborn", "XGBoost","Pylint", "Pytest"],
-  dataEngineering: ["SQL", "PySpark","MongoDB", "BeautifulSoup", "Requests", "Postman", "BigQuery"],
-  toolsTechnologies: ["GitHub","Gitlab","Docker", "VSCode", "PyCharm","Alteryx", "AWS"],
-  additionalTools: ["Tableau", "PowerBI", "IBM Watson Studio", "Aqua Data Studio","Excel", "Gradio", "Streamlit", "FastAPI"]
+
+  machineLearning: [
+    "PyTorch", "TensorFlow", "Keras", "Scikit-Learn", "XGBoost",
+    "HuggingFace", "Transformers", "LangChain", "LangGraph",
+    "Optuna", "Faiss", "OpenCV"
+  ],
+
+  dataAnalysisVisualization: ["NumPy", "Pandas", "Matplotlib", "Seaborn"],
+
+  dataEngineering: ["SQL", "PySpark", "MongoDB", "BigQuery"],
+
+  cloudDevOpsTools: [
+    "AWS", "Docker", "GitHub", "GitLab",
+    "VSCode", "PyCharm", "Pylint", "Pytest"
+  ],
+
+  additionalTools: [
+    "FastAPI", "Gradio", "Streamlit",
+    "Requests", "BeautifulSoup", "Postman",
+    "Tableau", "PowerBI", "Excel",
+    "IBM Watson Studio", "Aqua Data Studio"
+  ]
 };
+
 
 export const experience = [
   {
