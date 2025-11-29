@@ -72,6 +72,7 @@ const About = () => {
               <span className="font-medium">One System at a Time</span>
             </motion.h2>
 
+            {/* Bio */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -81,6 +82,23 @@ const About = () => {
             >
               {aboutMe.bio}
             </motion.p>
+
+            {/* Education Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm mb-8"
+            >
+              <h3 className="text-xl font-medium text-black mb-2">Education</h3>
+              <p className="text-gray-700">
+                <span className="font-semibold">{aboutMe.education.institution}</span><br />
+                {aboutMe.education.degree}<br />
+                <span className="text-gray-500">Minor specialization : {aboutMe.education.minors}</span>
+              </p>
+            </motion.div>
+
 
             {/* Stats */}
             <motion.div
